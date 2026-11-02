@@ -25,8 +25,6 @@ estadisticas (id PK, jugador_id FK, temporada FK, equipo FK, g, pts, trb, ast, p
 - **Vista `v_estadisticas`**: une las cuatro tablas y **calcula en SQL las métricas propias** (MS, FDS, MG, PPR…), así nunca se desincronizan de los datos.
 - **Escritura en una transacción** (`nba_db.guardar`): al actualizar una temporada se borra y se vuelve a insertar entera. Si algo falla, no se guarda nada.
 - **Consultas** con `JOIN`, `GROUP BY` / `HAVING`, subconsultas `NOT EXISTS`, CTE (`WITH`) y funciones de ventana (`ROW_NUMBER() OVER (PARTITION BY …)`).
-- [`consultas.sql`](consultas.sql): ejercicios de práctica de SQL sobre esta misma base de datos.
-
 ## Cómo compara a los jugadores
 
 1. Elige las estadísticas según la era: **Clásico** (antes de 1980-81: FG%, TS%, WS, PER…) o **Moderno** (24 estadísticas avanzadas). Solo usa las que el jugador histórico tiene de verdad, porque en 1958 no se contaban ni robos ni tapones.
@@ -48,7 +46,6 @@ Python · **SQLite / SQL** · pandas · NumPy · Tkinter · PyInstaller
 | `nba_gui.py` | Interfaz de escritorio (Tkinter) |
 | `actualizar_datos.py` | Descarga temporadas de Basketball-Reference y las guarda en la base de datos |
 | `limpiar_datos.py` | Importa y limpia el Excel original (`NBAStats.xlsx`) |
-| `consultas.sql` | Ejercicios de SQL |
 | `compilar.bat` | Genera el `.exe` con los datos dentro |
 
 ## Ejecutar

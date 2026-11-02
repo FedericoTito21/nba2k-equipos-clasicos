@@ -12,3 +12,6 @@ __pycache__/
 build/
 dist/
 *.spec
+
+# Ejercicios personales de SQL (solo en local)
+consultas.sql
