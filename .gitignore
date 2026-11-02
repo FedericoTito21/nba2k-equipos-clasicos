@@ -1,0 +1,14 @@
+# Datos: se generan con actualizar_datos.py (vienen de Basketball-Reference)
+nba.db
+*.csv.gz
+*.xlsx
+
+# Versión antigua, solo de referencia local
+nba_gui_original.py
+
+# Python y PyInstaller
+__pycache__/
+*.pyc
+build/
+dist/
+*.spec

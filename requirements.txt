@@ -1,0 +1,5 @@
+pandas>=2.0
+numpy>=1.24
+# Solo para los scripts de datos (no van dentro del .exe):
+openpyxl>=3.1   # limpiar_datos.py (leer el Excel)
+lxml>=4.9       # actualizar_datos.py (leer Basketball-Reference)
