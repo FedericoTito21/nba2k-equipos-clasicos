@@ -4,6 +4,13 @@ Aplicación de escritorio que encuentra el **equivalente actual de cada jugador 
 
 Trabaja sobre una **base de datos SQLite** con más de 22.000 temporadas de jugador, desde 1948-49 hasta la actualidad, y compara a los jugadores con **estadística** (z-scores y similitud del coseno).
 
+## ⬇️ Descargar (Windows)
+
+1. Descarga **[NBA2K-Equipos-Clasicos.exe](https://github.com/FedericoTito21/nba2k-equipos-clasicos/releases/latest/download/NBA2K-Equipos-Clasicos.exe)**, que también está en [Releases](https://github.com/FedericoTito21/nba2k-equipos-clasicos/releases/latest).
+2. Ábrelo y listo. No hay que instalar nada ni tener Python: los datos van dentro del propio programa.
+
+> Si Windows muestra «Windows protegió su PC», pulsa **Más información → Ejecutar de todas formas**. Sale porque el programa no está firmado digitalmente.
+
 ## Qué hace
 
 - **Equipo histórico**: eliges una temporada y un equipo, y para cada jugador te da su valoración (MS), su equivalente actual, alternativas y el porcentaje de parecido. No repite equivalentes dentro de un mismo equipo. Se puede exportar a CSV.
@@ -48,7 +55,7 @@ Python · **SQLite / SQL** · pandas · NumPy · Tkinter · PyInstaller
 | `limpiar_datos.py` | Importa y limpia el Excel original (`NBAStats.xlsx`) |
 | `compilar.bat` | Genera el `.exe` con los datos dentro |
 
-## Ejecutar
+## Ejecutar desde el código
 
 Los datos no van en el repositorio (vienen de [Basketball-Reference](https://www.basketball-reference.com)), así que primero se crea la base de datos:
 
